@@ -5,9 +5,8 @@ function Home() {
     <>
       <Navbar />
 
-      <main>
+      <main className="container" style={{ paddingTop: "60px" }}>
         <h1>Welcome to LocalNexus</h1>
-        <p>Connecting Local Businesses, Services & Artisans</p>
       </main>
     </>
   );

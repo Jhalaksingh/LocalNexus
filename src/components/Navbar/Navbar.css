@@ -1,0 +1,93 @@
+.navbar {
+  width: 100%;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  height: 75px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.logo-icon {
+  width: 45px;
+  height: 45px;
+
+  background: var(--primary);
+  color: white;
+
+  border-radius: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+.nav-links {
+  display: flex;
+  gap: 35px;
+
+  list-style: none;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+
+  transition: var(--transition);
+}
+
+.nav-links li:hover {
+  color: var(--primary);
+}
+.auth-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.login-btn,
+.register-btn {
+  padding: 10px 18px;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  transition: var(--transition);
+}
+
+.login-btn {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.login-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.register-btn {
+  background: var(--primary);
+  color: white;
+}
+
+.register-btn:hover {
+  background: #1d4ed8;
+}

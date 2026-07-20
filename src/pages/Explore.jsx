@@ -1,5 +1,15 @@
+import Navbar from "../components/Navbar/Navbar";
+import Businesses from "../components/Businesses/Businesses";
+import Footer from "../components/Footer/Footer";
+
 function Explore() {
-  return <h1>Explore Page</h1>;
+  return (
+    <>
+      <Navbar />
+      <Businesses />
+      <Footer />
+    </>
+  );
 }
 
 export default Explore;

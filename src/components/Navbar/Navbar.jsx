@@ -1,25 +1,40 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <nav className="navbar">
       <div className="container navbar-container">
 
-        <div className="logo">
-          <div className="logo-icon">LN</div>
-          <span>LocalNexus</span>
-        </div>
+        {/* Logo */}
+        <Link to="/" className="logo">
+          <div className="logo-box">LN</div>
+          <h2>LocalNexus</h2>
+        </Link>
 
+        {/* Navigation Links */}
         <ul className="nav-links">
-          <li>Home</li>
-          <li>Explore</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+
+          <li>
+            <Link to="/explore">Explore</Link>
+          </li>
+
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
         </ul>
 
-        <div className="auth-buttons">
-            <button className="login-btn">Sign In</button>
-            <button className="register-btn">Become a Seller</button>
+        {/* Right Buttons */}
+        <div className="nav-buttons">
+          <button className="login-btn">Sign In</button>
+          <button className="seller-btn">Become a Seller</button>
         </div>
 
       </div>
